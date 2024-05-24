@@ -61,6 +61,53 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+/* Ensure body has enough top padding to prevent content overlap */
+body {
+    padding-top: 60px; /* Adjust the value according to the height of your fixed section */
+}
+
+/* Style for the fixed links section */
+#fixed-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* You can adjust the width as needed */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    background-color: #FFFFFF; /* Match your desired background color */
+}
+
+/* Style for the links in the fixed section */
+#fixed-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px; /* Adjust padding as needed */
+    display: flex; /* Adjust flex properties as needed */
+    justify-content: space-around; /* Adjust alignment as needed */
+}
+
+#fixed-links ul li {
+    display: inline;
+}
+
+#fixed-links ul li a {
+    color: #FF0000; /* Red color for the links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#fixed-links ul li a:hover {
+    color: #FF4500; /* Slightly different red for hover state */
+}
+
+#fixed-links ul li a.active {
+    color: #FF0000; /* Red color for the active link */
+}
+
+/* Optional: Add padding to the content wrapper to avoid overlap with fixed section */
+#content-wrapper {
+    padding-top: 60px; /* Adjust this value according to the height of your fixed section */
+}
+
+
 body {
     background-color: #FFFFFF !important; /* White background */
     color: #000000 !important; /* Black text */
