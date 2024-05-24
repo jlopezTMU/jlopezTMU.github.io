@@ -208,6 +208,74 @@ p {
     color: #000000 !important; /* Black text for paragraphs */
 }
 
+/* Ensure the sidebar is fixed */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust the width as needed */
+    height: 100%; /* Make it take the full height of the viewport */
+    background-color: #ffffff; /* Ensure it matches your design */
+    overflow-y: auto; /* Allow scrolling if content is longer than viewport height */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+/* Adjust the main content to avoid overlap with the sidebar */
+#wrapper {
+    margin-left: 250px; /* Match this to the sidebar width */
+}
+
+/* Style the sidebar links */
+#sidebar nav ul li a {
+    color: #FF0000; /* Red color for links */
+    text-decoration: none;
+}
+
+#sidebar nav ul li a:hover {
+    color: #FF4500; /* Slightly different color for hover state */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 200px;
+    }
+
+    #wrapper {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #wrapper {
+        margin-left: 0;
+    }
+
+    #sidebar nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sidebar nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
 ol, ul {
     list-style: none;
 }
