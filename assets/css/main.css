@@ -24,6 +24,37 @@ section, summary, time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+/* Ensure body has enough top padding to prevent content overlap */
+body {
+    padding-top: 60px; /* Adjust the value according to the height of your fixed nav */
+}
+
+/* Style for the fixed navigation */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    background-color: #FFFFFF; /* Match your desired background color */
+}
+
+/* Style for the links in the navigation */
+#header > nav > ul > li > a {
+    color: #FF0000; /* Red color for the links */
+}
+
+#header > nav > ul > li > a:hover {
+    color: #FF4500; /* Slightly different red for hover state */
+}
+
+#header > nav > ul > li > a.active {
+    color: #FF0000; /* Red color for the active link */
+}
+
+/* Optional: Add padding to the content wrapper to avoid overlap with fixed header */
+#content-wrapper {
+    padding-top: 60px; /* Adjust this value according to the height of your header */
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
