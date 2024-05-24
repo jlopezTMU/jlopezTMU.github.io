@@ -107,6 +107,59 @@ body {
     padding-top: 60px; /* Adjust this value according to the height of your fixed section */
 }
 
+/* Style for the fixed links section */
+#fixed-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust the width as needed */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    background-color: #FFFFFF; /* Background color for the fixed section */
+    padding: 10px; /* Adjust padding as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+}
+
+/* Style for the links in the fixed section */
+#fixed-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Adjust flex properties as needed */
+    justify-content: space-around; /* Adjust alignment as needed */
+}
+
+#fixed-links ul li {
+    display: inline;
+}
+
+#fixed-links ul li a {
+    color: #FF0000; /* Red color for the links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    padding: 10px; /* Add padding for better clickable area */
+}
+
+#fixed-links ul li a:hover {
+    color: #FF4500; /* Slightly different red for hover state */
+}
+
+#fixed-links ul li a.active {
+    color: #FF0000; /* Red color for the active link */
+}
+
+/* Add some content padding to prevent overlap */
+#content-wrapper {
+    padding-top: 50px; /* Adjust this value according to the height of your fixed section */
+}
+
+section {
+    margin: 50px 0; /* Add some margin to each section for better spacing */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+
 
 body {
     background-color: #FFFFFF !important; /* White background */
