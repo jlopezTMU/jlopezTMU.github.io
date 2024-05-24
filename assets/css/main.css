@@ -29,6 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
+	background-color: #FFFFFF; /* White background */
+        color: #000000; /* Black text */
+        font-family: Arial, sans-serif;
 	line-height: 1;
 }
 
