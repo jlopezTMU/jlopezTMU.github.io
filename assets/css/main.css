@@ -29,10 +29,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
-	background-color: #FFFFFF; /* White background */
-        color: #000000; /* Black text */
-        font-family: Arial, sans-serif;
+	background-color: #FFFFFF !important; /* White background */
+        color: #000000 !important; /* Black text */
+    	font-family: Arial, sans-serif !important; /* Optional: Set a default font */
+
 	line-height: 1;
+	
 }
 
 ol, ul {
