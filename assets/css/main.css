@@ -24,6 +24,33 @@ section, summary, time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust the width as needed */
+    height: 100%; /* Make it take the full height of the viewport */
+    overflow-y: auto; /* Allow scrolling if content is longer than viewport height */
+    background-color: #312450; /* Make sure the background color matches your design */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+/* Optional: add padding to the main content to avoid overlap */
+#wrapper {
+    margin-left: 250px; /* Match this to the sidebar width */
+}
+
+/* Ensure links are visible */
+#sidebar nav ul li a {
+    color: #FF0000; /* Red color for links */
+    text-decoration: none;
+}
+
+#sidebar nav ul li a:hover {
+    color: #FF4500; /* Slightly different red for hover state */
+}
+
 /* Ensure body has enough top padding to prevent content overlap */
 body {
     padding-top: 60px; /* Adjust the value according to the height of your fixed nav */
