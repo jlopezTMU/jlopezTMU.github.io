@@ -67,7 +67,7 @@ body {
 
 /* Style for the links in the navigation */
 #header > nav > ul > li > a {
-    color: #FFFFFF; !important /* Red color for the links */
+    color: #FFFFFF; !important /* white color for the links */
 }
 
 #header > nav > ul > li > a:hover {
@@ -75,7 +75,7 @@ body {
 }
 
 #header > nav > ul > li > a.active {
-    color: #FF0000; /* Red color for the active link */
+    color: #FFFFFF; /* white color for the active link */
 }
 
 /* Optional: Add padding to the content wrapper to avoid overlap with fixed header */
