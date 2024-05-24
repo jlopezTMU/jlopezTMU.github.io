@@ -43,7 +43,7 @@ section, summary, time, mark, audio, video {
 
 /* Ensure links are visible */
 #sidebar nav ul li a {
-    color: #FFFFFF; /* Red color for links */
+    color: #FFFFFF; /* white color for links */
     text-decoration: none;
 }
 
