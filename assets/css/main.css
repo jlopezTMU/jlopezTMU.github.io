@@ -126,7 +126,7 @@ body {
 }
 
 #fixed-links ul li a.active {
-    color: #FF0000; /* Red color for the active link */
+    color: #FFFFFF; /* white color for the active link */
 }
 
 /* Optional: Add padding to the content wrapper to avoid overlap with fixed section */
