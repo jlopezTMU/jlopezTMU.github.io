@@ -160,7 +160,7 @@ body {
 }
 
 #fixed-links ul li a {
-    color: #FF0000; /* Red color for the links */
+    color: #FFFFFF; /* white color for the links */
     text-decoration: none; /* Remove underline from links */
     font-weight: bold;
     padding: 10px; /* Add padding for better clickable area */
@@ -171,7 +171,7 @@ body {
 }
 
 #fixed-links ul li a.active {
-    color: #FF0000; /* Red color for the active link */
+    color: #FFFFFF; /* white color for the links */
 }
 
 /* Add some content padding to prevent overlap */
@@ -197,7 +197,7 @@ body {
 
 /* Additional styles for links and headings to ensure visibility */
 a {
-    color: #FF0000 !important; /* Default link color */
+    color: #FFFFFF; /* white color for the links */
 }
 
 h1, h2, h3, h4, h5, h6 {
