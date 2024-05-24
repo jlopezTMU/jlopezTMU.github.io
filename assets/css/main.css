@@ -319,6 +319,11 @@ input, select, textarea {
 		padding: 0.25em 0.65em;
 	}
 
+	body {
+		background-color: #FFFFFF !important; /* White background */
+        	color: #000000 !important; /* Black text */
+    		font-family: Arial, sans-serif !important; /* Optional: Set a default font */
+	}
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
