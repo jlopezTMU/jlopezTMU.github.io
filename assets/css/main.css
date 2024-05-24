@@ -67,7 +67,7 @@ body {
 
 /* Style for the links in the navigation */
 #header > nav > ul > li > a {
-    color: #FF0000; /* Red color for the links */
+    color: #FFFFFF; !important /* Red color for the links */
 }
 
 #header > nav > ul > li > a:hover {
