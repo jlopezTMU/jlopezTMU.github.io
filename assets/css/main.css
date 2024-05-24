@@ -37,6 +37,19 @@ body {
 	
 }
 
+/* Additional styles for links and headings to ensure visibility */
+a {
+    color: #0000EE; /* Default link color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000000 !important; /* Black text for headings */
+}
+
+p {
+    color: #000000 !important; /* Black text for paragraphs */
+}
+
 ol, ul {
 	list-style: none;
 }
