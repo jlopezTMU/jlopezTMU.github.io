@@ -209,46 +209,44 @@
 							<p>&nbsp;</p>
 							<p><em>Background on Probabilistic Topic Models</em>. The basic idea behind TMs is that, given a large unstructured text, the hidden topics are discovered. TMs are directed to answer the question: &ldquo;what is this text talking about?&rdquo;. This concept is illustrated in Figure 1 using a toy example (as the text analyzed may contain billions of words). Here, each of the words from the text is assigned to a topic, i.e., a list of related words on the same subject. The output of a TM is the most likely words per each of the most likely topics. We will see later that the number of topics and the number of words are parameterizable. A more formal definition of TMs, is that they are a set of machine learning techniques aimed to extract the thematic structure in a massive collection of documents. These are Information Recovery (IR) / Data Mining (DM) techniques that use the texts latent information for clustering the documents; i.e., grouping them according to the similarity found amongst them.</p>
 						</div>
-					</section>
-				<!-- Last -->
 					<section id="last" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contact me</h2>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
+					    <div class="inner">
+					        <h2>Contact me</h2>
+					        <div class="split style1">
+					            <section>
+					                <form method="post" action="contact.php">
+					                    <div class="fields">
+					                        <div class="field half">
+					                            <label for="name">Name</label>
+					                            <input type="text" name="name" id="name" required />
+					                        </div>
+					                        <div class="field half">
+					                            <label for="email">Email</label>
+					                            <input type="email" name="email" id="email" required />
+					                        </div>
+					                        <div class="field">
+					                            <label for="message">Message</label>
+					                            <textarea name="message" id="message" rows="5" required></textarea>
+					                        </div>
+					                    </div>
+					                    <ul class="actions">
+					                        <li><input type="submit" class="button submit" value="Send Message" /></li>
+					                    </ul>
+					                </form>
+					            </section>
+					            <section>
+					                <ul class="contact">
+					                    <li>
+					                        <h3>Social</h3>
+					                        <ul class="icons">
+					                            <li><a href="https://github.com/jlopeztmu" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+					                            <li><a href="https://www.linkedin.com/in/cytlalli" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+					                            
+					                    </li>
+					                </ul>
+					            </section>
+					        </div>
+					    </div>
 					</section>
 
 			</div>
