@@ -1,9 +1,23 @@
 AIL ME<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Mailto Handler</title>
+    <script type="text/javascript">
+        function registerHandler() {
+            navigator.registerProtocolHandler(
+                "mailto",
+                "https://mail.google.com/mail/?extsrc=mailto&url=%s",
+                "Gmail"
+            );
+            alert("Gmail has been set as the default handler for mailto links.");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="registerHandler()">Set Gmail as Mailto Handler</button>
+</body>
 <html>
 	<head>
     		<title>Justified Text Example</title>
