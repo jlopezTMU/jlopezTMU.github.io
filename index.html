@@ -221,16 +221,18 @@ AIL ME<!DOCTYPE HTML>
 					    <div class="inner">
 					        <h2>Contact me</h2>
 					        <div class="split style1">
-						
 					            <section>
 					                <p>If you have any questions, feel free to 
-								<script type="text/javascript">
-								    // JavaScript to obfuscate the email address
-								    var user = "jlopez";
-								    var domain = "torontomu.ca";
-								    document.write('<a href="mailto:' + user + '@' + domain + '" style="color: red;">EMAIL ME</a>');
-								</script>							   
-							.</p>
+					                    <span id="email-link"></span>
+					                    .
+					                </p>
+					                <script type="text/javascript">
+					                    // JavaScript to obfuscate the email address
+					                    var user = "jlopez";
+					                    var domain = "torontomu.ca";
+					                    var emailLink = '<a href="mailto:' + user + '@' + domain + '" style="color: red;">email me</a>';
+					                    document.getElementById('email-link').innerHTML = emailLink;
+					                </script>
 					            </section>
 					            <section>
 					                <ul class="contact">
@@ -243,6 +245,9 @@ AIL ME<!DOCTYPE HTML>
 					                    </li>
 					                </ul>
 					            </section>
+					        </div>
+					    </div>
+</section>
 					        </div>
 					    </div>
 					</section>
