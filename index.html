@@ -3,17 +3,43 @@ AIL ME<!DOCTYPE HTML>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Mailto Handler</title>
-    <script type="text/javascript">
-        function registerHandler() {
-            navigator.registerProtocolHandler(
-                "mailto",
-                "https://mail.google.com/mail/?extsrc=mailto&url=%s",
-                "Gmail"
-            );
-            alert("Gmail has been set as the default handler for mailto links.");
+    <title>Sidebar Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
         }
-    </script>
+        #sidebar {
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        #sidebar .inner {
+            padding: 20px;
+        }
+        #sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #sidebar nav ul li {
+            margin: 10px 0;
+        }
+        #sidebar nav ul li a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        #sidebar nav ul li a:hover {
+            color: red;
+        }
+    </style>
 </head>
 
 <head>
