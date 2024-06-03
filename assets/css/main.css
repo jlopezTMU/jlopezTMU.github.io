@@ -52,7 +52,7 @@ body {
 
 /* Wrapper styles */
 #wrapper {
-    margin-top: 80px; /* Adjust this margin to match the sidebar height */
+    margin-top: 30px; /* Adjust this margin to match the sidebar height */
     padding: 20px;
 }
 
