@@ -10,17 +10,17 @@ body {
 /* Sidebar styles */
 #sidebar {
     width: 100%;
-    max-width: 12ch; /* Set max width to 15 characters */
+    max-width: 15ch; /* Set max width to 15 characters */
     position: fixed;
     top: 0;
     left: 0;
     background-color: #f4f4f4;
-    padding: 5px;
+    padding: 20px;
     z-index: 1000; /* Ensure sidebar stays on top */
 }
 
 #sidebar .inner {
-    padding: 8px;
+    padding: 20px;
 }
 
 #sidebar nav ul {
@@ -33,7 +33,7 @@ body {
 }
 
 #sidebar nav ul li {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 #sidebar nav ul li a {
@@ -41,7 +41,7 @@ body {
     color: blue;
     font-weight: bold;
     display: block;
-    padding: 5px;
+    padding: 10px;
     transition: color 0.3s, background-color 0.3s;
     word-wrap: break-word; /* Ensure long words break properly */
 }
@@ -54,6 +54,8 @@ body {
 #wrapper {
     margin-top: 120px; /* Adjust this margin to match the sidebar height */
     padding: 20px;
+    padding-left: 3px; /* Set left padding */
+    max-width: 30ch; /* Set max width to 30 characters per line */
     word-wrap: break-word; /* Ensure long words break properly */
 }
 
@@ -71,7 +73,7 @@ body {
 
 .icons li {
     display: inline-block;
-    margin-right: 3px;
+    margin-right: 10px;
 }
 
 .icon {
@@ -99,11 +101,12 @@ body {
     #wrapper {
         margin-left: 240px; /* Adjust this margin to match the sidebar width */
         margin-top: 0;
+        padding-left: 20px; /* Adjust padding for larger screens */
+        max-width: none; /* Reset max-width for larger screens */
     }
 
     /* Reset content margin for larger screens */
     #content {
         margin-left: 0;
-        max-width: none; /* Reset max-width for larger screens */
     }
 }
