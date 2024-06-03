@@ -15,12 +15,12 @@ body {
     top: 0;
     left: 0;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 2px;
     z-index: 1000; /* Ensure sidebar stays on top */
 }
 
 #sidebar .inner {
-    padding: 20px;
+    padding: 2px;
 }
 
 #sidebar nav ul {
@@ -34,7 +34,7 @@ body {
 }
 
 #sidebar nav ul li {
-    margin: 10px 0;
+    margin: 2px 0;
 }
 
 #sidebar nav ul li a {
@@ -53,8 +53,8 @@ body {
 
 /* Wrapper styles */
 #wrapper {
-    margin-top: 120px; /* Adjust this margin to match the sidebar height */
-    padding: 20px;
+    margin-top: 10px; /* Adjust this margin to match the sidebar height */
+    padding: 2px;
     padding-left: 3px; /* Set left padding */
     max-width: 30ch; /* Set max width to 30 characters per line */
     word-wrap: break-word; /* Ensure long words break properly */
