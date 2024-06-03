@@ -55,7 +55,11 @@ body {
     margin-top: 120px; /* Adjust this margin to match the sidebar height */
     padding: 20px;
     word-wrap: break-word; /* Ensure long words break properly */
-    column-width: 25ch; /* Ensure content starts in column with width of 25 characters */
+}
+
+/* Content column control */
+#content {
+    margin-left: 2em; /* Start the content after a specific column */
 }
 
 /* Icons styles */
@@ -95,6 +99,10 @@ body {
     #wrapper {
         margin-left: 240px; /* Adjust this margin to match the sidebar width */
         margin-top: 0;
-        column-width: auto; /* Reset column width for larger screens */
+    }
+
+    /* Reset content margin for larger screens */
+    #content {
+        margin-left: 0;
     }
 }
