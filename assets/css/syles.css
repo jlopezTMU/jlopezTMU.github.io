@@ -12,6 +12,7 @@ body {
     left: 0;
     background-color: #f4f4f4;
     padding: 20px;
+    z-index: 1000; /* Ensure sidebar stays on top */
 }
 
 #sidebar .inner {
