@@ -10,6 +10,7 @@ body {
 /* Sidebar styles */
 #sidebar {
     width: 100%;
+    max-width: 15ch; /* Set max width to 15 characters */
     position: fixed;
     top: 0;
     left: 0;
@@ -51,7 +52,7 @@ body {
 
 /* Wrapper styles */
 #wrapper {
-    margin-top: 200px; /* Adjust this margin to match the sidebar height */
+    margin-top: 120px; /* Adjust this margin to match the sidebar height */
     padding: 20px;
     word-wrap: break-word; /* Ensure long words break properly */
 }
