@@ -1,12 +1,10 @@
-/* Existing styles */
-/* Add any pre-existing styles here */
-
 /* General body styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Sidebar styles */
@@ -44,6 +42,7 @@ body {
     display: block;
     padding: 10px;
     transition: color 0.3s, background-color 0.3s;
+    word-wrap: break-word; /* Ensure long words break properly */
 }
 
 #sidebar nav ul li a:hover {
@@ -52,8 +51,9 @@ body {
 
 /* Wrapper styles */
 #wrapper {
-    margin-top: 30px; /* Adjust this margin to match the sidebar height */
+    margin-top: 120px; /* Adjust this margin to match the sidebar height */
     padding: 20px;
+    word-wrap: break-word; /* Ensure long words break properly */
 }
 
 /* Icons styles */
