@@ -9,7 +9,7 @@ body {
 
 /* Sidebar styles */
 #sidebar {
-    width: 30ch; /* Increase the width to 20 characters */
+    width: 20ch; /* Increase the width to 20 characters */
     background-color: #f4f4f4;
     padding: 20px 20px 20px 5px; /* Set left padding to 5px */
     z-index: 1000; /* Ensure sidebar stays on top */
@@ -17,6 +17,8 @@ body {
     top: 0;
     left: 0;
     white-space: nowrap; /* Prevent wrapping of words within links */
+    height: 100%; /* Ensure the sidebar extends to the full height of the viewport */
+    overflow-y: auto; /* Add vertical scrolling if content exceeds the viewport height */
 }
 
 #sidebar .inner {
@@ -58,6 +60,7 @@ body {
     word-wrap: break-word; /* Ensure long words break properly */
     margin-top: 0; /* No top margin needed */
     margin-left: 22ch; /* Adjust this margin to match the new sidebar width plus some padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Content column control */
@@ -93,6 +96,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
+        overflow-y: auto; /* Add vertical scrolling if content exceeds the viewport height */
     }
 
     #sidebar nav ul {
