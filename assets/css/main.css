@@ -9,7 +9,7 @@ body {
 
 /* Sidebar styles */
 #sidebar {
-    width: 20ch; /* Increase the width to 20 characters */
+    width: 30ch; /* Increase the width to 20 characters */
     background-color: #f4f4f4;
     padding: 20px 20px 20px 5px; /* Set left padding to 5px */
     z-index: 1000; /* Ensure sidebar stays on top */
