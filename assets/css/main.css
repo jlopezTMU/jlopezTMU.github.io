@@ -14,9 +14,6 @@ body {
     background-color: #f4f4f4;
     padding: 20px 20px 20px 5px; /* Set left padding to 5px */
     z-index: 1000; /* Ensure sidebar stays on top */
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 #sidebar .inner {
@@ -52,12 +49,11 @@ body {
 
 /* Wrapper styles */
 #wrapper {
-    margin-top: 140px; /* Adjust this margin to clear the height of the sidebar */
     padding: 20px;
     padding-left: 3px; /* Set left padding */
     max-width: 30ch; /* Set max width to 30 characters per line */
     word-wrap: break-word; /* Ensure long words break properly */
-    margin-left: 15ch; /* Ensure content is not overlapped by the sidebar */
+    margin-top: 180px; /* Adjust this margin to clear the height of the sidebar */
 }
 
 /* Content column control */
@@ -93,6 +89,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
+        max-width: 15ch;
     }
 
     #sidebar nav ul {
