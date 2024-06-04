@@ -56,7 +56,7 @@ body {
     margin-top: 10px; /* Adjust this margin to match the sidebar height */
     padding: 2px;
     padding-left: 3px; /* Set left padding */
-    max-width: 30ch; /* Set max width to 30 characters per line */
+    max-width: 20ch; /* Set max width to 30 characters per line */
     word-wrap: break-word; /* Ensure long words break properly */
 }
 
@@ -86,10 +86,10 @@ body {
 }
 
 /* Media Queries for responsive design */
-@media (min-width: 100px) {
+@media (min-width: 50px) {
     #sidebar {
         text-align: center;
-        width: 100px;
+        width: 50px;
         height: 100%;
         position: fixed;
         top: 0;
