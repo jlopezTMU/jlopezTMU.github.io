@@ -15,12 +15,12 @@ body {
     top: 0;
     left: 0;
     background-color: #f4f4f4;
-    padding: 150px 150px 150px 150px; /* Set left padding to 5px */
+    padding: 20px 20px 20px 5px; /* Set left padding to 5px */
     z-index: 1000; /* Ensure sidebar stays on top */
 }
 
 #sidebar .inner {
-    padding: 2px;
+    padding: 0; /* Remove inner padding to fit content within 15 characters */
 }
 
 #sidebar nav ul {
@@ -28,13 +28,13 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: row; /* Change to row for horizontal layout on mobile */
+    flex-direction: row; /* Align items horizontally */
     flex-wrap: wrap;
     justify-content: space-around; /* Space out items */
 }
 
 #sidebar nav ul li {
-    margin: 2px 0;
+    margin: 5px 0; /* Adjust margin for spacing */
 }
 
 #sidebar nav ul li a {
@@ -42,7 +42,7 @@ body {
     color: blue;
     font-weight: bold;
     display: block;
-    padding: 10px;
+    padding: 5px; /* Reduce padding to fit within 15 characters */
     transition: color 0.3s, background-color 0.3s;
     word-wrap: break-word; /* Ensure long words break properly */
 }
@@ -53,10 +53,10 @@ body {
 
 /* Wrapper styles */
 #wrapper {
-    margin-top: 10px; /* Adjust this margin to match the sidebar height */
-    padding: 2px;
+    margin-top: 140px; /* Increase this margin to clear the height of the sidebar */
+    padding: 20px;
     padding-left: 3px; /* Set left padding */
-    max-width: 15ch; /* Set max width to 15 characters per line */
+    max-width: 30ch; /* Set max width to 30 characters per line */
     word-wrap: break-word; /* Ensure long words break properly */
 }
 
@@ -86,25 +86,23 @@ body {
 }
 
 /* Media Queries for responsive design */
-@media (min-width: 50px) {
+@media (min-width: 768px) {
     #sidebar {
-        text-align: center;
-        width: 50px;
+        width: 15ch;
         height: 100%;
         position: fixed;
         top: 0;
         left: 0;
-        max-width: 15ch; /* Set max width to 15 characters on larger screens */
     }
 
     #sidebar nav ul {
-        flex-direction: column; /* Change to column layout on larger screens */
+        flex-direction: column; /* Keep column layout on larger screens */
     }
 
     #wrapper {
-        margin-left: 5px; /* Adjust this margin to match the sidebar width */
+        margin-left: 17ch; /* Adjust this margin to match the sidebar width plus some padding */
         margin-top: 0;
-        padding-left: 5px; /* Adjust padding for larger screens */
+        padding-left: 20px; /* Adjust padding for larger screens */
         max-width: none; /* Reset max-width for larger screens */
     }
 
