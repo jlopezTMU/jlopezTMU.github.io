@@ -15,7 +15,7 @@ body {
     top: 0;
     left: 0;
     background-color: #f4f4f4;
-    padding: 5px 5px 5px 15px; /* Set left padding to 5px */
+    padding: 15px 15px 15px 15px; /* Set left padding to 5px */
     z-index: 1000; /* Ensure sidebar stays on top */
 }
 
