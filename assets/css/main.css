@@ -84,7 +84,7 @@ body {
 /* Media Queries for responsive design */
 @media (min-width: 768px) {
     #sidebar {
-        width: 35ch;
+        width: 50ch;
         height: 100%;
         position: fixed;
         top: 0;
