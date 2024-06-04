@@ -10,13 +10,13 @@ body {
 /* Sidebar styles */
 #sidebar {
     width: 100%;
-    max-width: 100%; /* Ensure the sidebar spans the full width on mobile */
+    max-width: 15ch; /* Set max width to 15 characters */
     position: fixed;
     top: 0;
     left: 0;
     background-color: #f4f4f4;
-    padding: 2px;
-    z-index: 500; /* Ensure sidebar stays on top */
+    padding: 20px 20px 20px 5px; /* Set left padding to 5px */
+    z-index: 1000; /* Ensure sidebar stays on top */
 }
 
 #sidebar .inner {
