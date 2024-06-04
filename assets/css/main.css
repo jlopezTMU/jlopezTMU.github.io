@@ -9,8 +9,8 @@ body {
 
 /* Sidebar styles */
 #sidebar {
-    width: 30ch; /* Set width to 15 characters */
-    background-color: #FFFDD0;
+    width: 20ch; /* Increase the width to 20 characters */
+    background-color: #f4f4f4;
     padding: 20px 20px 20px 5px; /* Set left padding to 5px */
     z-index: 1000; /* Ensure sidebar stays on top */
     position: fixed;
@@ -20,7 +20,7 @@ body {
 }
 
 #sidebar .inner {
-    padding: 0; /* Remove inner padding to fit content within 15 characters */
+    padding: 0; /* Remove inner padding to fit content within the specified width */
 }
 
 #sidebar nav ul {
@@ -41,8 +41,8 @@ body {
     color: blue;
     font-weight: bold;
     display: block;
-    padding: 5px; /* Reduce padding to fit within 15 characters */
-    transition: color 0.3s, background-color 0.3s;
+    padding: 5px; /* Reduce padding to fit within the specified width */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for color and background-color changes */
     word-wrap: break-word; /* Ensure long words break properly */
 }
 
@@ -57,7 +57,7 @@ body {
     max-width: 30ch; /* Set max width to 30 characters per line */
     word-wrap: break-word; /* Ensure long words break properly */
     margin-top: 0; /* No top margin needed */
-    margin-left: 1ch; /* Adjust this margin to match the new sidebar width plus some padding */
+    margin-left: 22ch; /* Adjust this margin to match the new sidebar width plus some padding */
 }
 
 /* Content column control */
@@ -88,7 +88,7 @@ body {
 /* Media Queries for responsive design */
 @media (min-width: 768px) {
     #sidebar {
-        width: 15ch;
+        width: 20ch;
         height: 100%;
         position: fixed;
         top: 0;
@@ -100,9 +100,9 @@ body {
     }
 
     #wrapper {
-        margin-left: 2ch; /* Adjust this margin to match the new sidebar width plus some padding */
+        margin-left: 22ch; /* Adjust this margin to match the new sidebar width plus some padding */
         margin-top: 0;
-        padding-left: 5px; /* Adjust padding for larger screens */
+        padding-left: 20px; /* Adjust padding for larger screens */
         max-width: none; /* Reset max-width for larger screens */
     }
 
