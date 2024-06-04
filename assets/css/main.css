@@ -10,8 +10,8 @@ body {
 /* Sidebar styles */
 #sidebar {
     width: 30ch; /* Set width to 15 characters */
-    background-color: ##FFFDD0;
-    padding: 200px 200px 200px 50px; /* Set left padding to 5px */
+    background-color: #FFFDD0;
+    padding: 20px 20px 20px 5px; /* Set left padding to 5px */
     z-index: 1000; /* Ensure sidebar stays on top */
     position: fixed;
     top: 0;
