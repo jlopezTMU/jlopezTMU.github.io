@@ -84,7 +84,7 @@ body {
 /* Media Queries for responsive design */
 @media (min-width: 768px) {
     #sidebar {
-        width: 15ch;
+        width: 35ch;
         height: 100%;
         position: fixed;
         top: 0;
@@ -97,7 +97,7 @@ body {
     }
 
     #wrapper {
-        margin-left: 17ch; /* Adjust this margin to match the sidebar width plus some padding */
+        margin-left: 5ch; /* Adjust this margin to match the sidebar width plus some padding */
         margin-top: 0;
         padding-left: 20px; /* Adjust padding for larger screens */
         max-width: none; /* Reset max-width for larger screens */
