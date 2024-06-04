@@ -10,7 +10,7 @@ body {
 /* Sidebar styles */
 #sidebar {
     width: 100%;
-    max-width: 15ch; /* Set max width to 15 characters */
+    max-width: 25ch; /* Set max width to 15 characters */
     background-color: #f4f4f4;
     padding: 20px 20px 20px 5px; /* Set left padding to 5px */
     z-index: 1000; /* Ensure sidebar stays on top */
@@ -49,7 +49,7 @@ body {
 
 /* Wrapper styles */
 #wrapper {
-    padding: 20px;
+    padding: 28px;
     padding-left: 3px; /* Set left padding */
     max-width: 30ch; /* Set max width to 30 characters per line */
     word-wrap: break-word; /* Ensure long words break properly */
