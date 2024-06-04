@@ -57,7 +57,7 @@ body {
     max-width: 30ch; /* Set max width to 30 characters per line */
     word-wrap: break-word; /* Ensure long words break properly */
     margin-top: 0; /* No top margin needed */
-    margin-left: 17ch; /* Adjust this margin to match the new sidebar width plus some padding */
+    margin-left: 1ch; /* Adjust this margin to match the new sidebar width plus some padding */
 }
 
 /* Content column control */
