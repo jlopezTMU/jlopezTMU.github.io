@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    /* <link rel="stylesheet" href="assets/css/main.css"> */
+    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,35 +66,44 @@
         .email-link {
             color: red;
         }
-   /* Media Query for Mobile Devices */
-        @media (max-width: 768px) {
-            body {
-                flex-direction: column;
-            }
-            #sidebar {
-                position: fixed;
-                width: 100%;
-                height: auto;
-                background-color: #f4f4f4;
-            }
-            #sidebar nav ul {
-                display: flex;
-                flex-direction: row;
-                overflow-x: auto; /* Horizontal scrolling if needed */
-            }
-            #sidebar nav ul li {
-                margin: 0;
-                flex: 1;
-            }
-            #sidebar nav ul li a {
-                padding: 10px 5px;
-                text-align: center;
-                border-right: 1px solid #ddd;
-            }
-            .content {
-                margin-left: 0;
-                padding: 20px;
-            }
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #f4f4f4;
+        z-index: 1000; /* Ensure sidebar stays on top */
+        overflow-x: auto;
+        overflow-y: hidden; /* Hide vertical overflow */
+    }
+    #sidebar nav ul {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto; /* Horizontal scrolling if needed */
+        margin: 0;
+        padding: 0;
+        white-space: nowrap; /* Prevent line breaks */
+    }
+    #sidebar nav ul li {
+        flex: 1;
+        margin: 0;
+    }
+    #sidebar nav ul li a {
+        padding: 10px 5px;
+        text-align: center;
+        border-right: 1px solid #ddd;
+    }
+    .content {
+        margin-left: 0;
+        padding: 20px;
+        padding-top: 60px; /* Adjust to avoid content being hidden behind the fixed header */
+    }
         }     
     </style>
 </head>
