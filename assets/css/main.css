@@ -44,7 +44,6 @@ body {
     color: blue;
     font-weight: bold;
     display: block;
-    padding: 5px; /* Reduce padding to fit within the specified width */
     transition: color 0.3s, background-color 0.3s; /* Smooth transition for color and background-color changes */
     word-wrap: break-word; /* Ensure long words break properly */
 }
@@ -92,7 +91,7 @@ body {
 /* Media Queries for responsive design */
 @media (min-width: 768px) {
     #sidebar {
-        width: 30ch;
+        width: 35ch;
         height: 100%;
         position: fixed;
         top: 0;
