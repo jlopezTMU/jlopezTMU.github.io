@@ -9,10 +9,9 @@ body {
 
 /* Sidebar styles */
 #sidebar {
-    width: 25ch; /* Increase the width to 25 characters */
     background-color: #f1f1f1;
     padding: 0;
-    width: 200px;
+    
     
     z-index: 1000; /* Ensure sidebar stays on top */
     position: fixed;
@@ -58,7 +57,7 @@ body {
 #wrapper {
     padding: 20px;
     padding-left: 3px; /* Set left padding */
-    max-width: 30ch; /* Set max width to 30 characters per line */
+    /* max-width: 30ch;  Set max width to 30 characters per line */
     word-wrap: break-word; /* Ensure long words break properly */
     margin-top: 0; /* No top margin needed */
     margin-left: 28ch; /* Adjust this margin to match the new sidebar width plus some padding */
