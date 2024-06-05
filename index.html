@@ -25,6 +25,8 @@
         .content {
             flex: 1;
             background-color: #fff;
+            margin-left: 190px; /* Adjust this to match the sidebar width */
+            padding: 20px;
         }
         #sidebar nav ul {
             list-style: none;
@@ -64,6 +66,36 @@
         .email-link {
             color: red;
         }
+   /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            #sidebar {
+                position: static;
+                width: 100%;
+                height: auto;
+                background-color: #f4f4f4;
+            }
+            #sidebar nav ul {
+                display: flex;
+                flex-direction: row;
+                overflow-x: auto; /* Horizontal scrolling if needed */
+            }
+            #sidebar nav ul li {
+                margin: 0;
+                flex: 1;
+            }
+            #sidebar nav ul li a {
+                padding: 10px 5px;
+                text-align: center;
+                border-right: 1px solid #ddd;
+            }
+            .content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }     
     </style>
 </head>
     
