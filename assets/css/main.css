@@ -9,7 +9,7 @@ body {
 
 /* Sidebar styles */
 #sidebar {
-    width: 40ch; /* Increase the width to 20 characters */
+    width: 25ch; /* Increase the width to 25 characters */
     background-color: #f4f4f4;
     padding: 20px 20px 20px 5px; /* Set left padding to 5px */
     z-index: 1000; /* Ensure sidebar stays on top */
@@ -59,7 +59,7 @@ body {
     max-width: 30ch; /* Set max width to 30 characters per line */
     word-wrap: break-word; /* Ensure long words break properly */
     margin-top: 0; /* No top margin needed */
-    margin-left: 22ch; /* Adjust this margin to match the new sidebar width plus some padding */
+    margin-left: 28ch; /* Adjust this margin to match the new sidebar width plus some padding */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -91,7 +91,7 @@ body {
 /* Media Queries for responsive design */
 @media (min-width: 768px) {
     #sidebar {
-        width: 20ch;
+        width: 25ch;
         height: 100%;
         position: fixed;
         top: 0;
@@ -104,7 +104,7 @@ body {
     }
 
     #wrapper {
-        margin-left: 22ch; /* Adjust this margin to match the new sidebar width plus some padding */
+        margin-left: 28ch; /* Adjust this margin to match the new sidebar width plus some padding */
         margin-top: 0;
         padding-left: 20px; /* Adjust padding for larger screens */
         max-width: none; /* Reset max-width for larger screens */
