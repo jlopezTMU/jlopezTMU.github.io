@@ -92,7 +92,7 @@ body {
 /* Media Queries for responsive design */
 @media (min-width: 768px) {
     #sidebar {
-        width: 25ch;
+        width: 30ch;
         height: 100%;
         position: fixed;
         top: 0;
@@ -105,9 +105,8 @@ body {
     }
 
     #wrapper {
-        margin-left: 28ch; /* Adjust this margin to match the new sidebar width plus some padding */
+        margin-left: 30ch; /* Adjust this margin to match the new sidebar width plus some padding */
         margin-top: 0;
-        padding-left: 20px; /* Adjust padding for larger screens */
         max-width: none; /* Reset max-width for larger screens */
     }
 
