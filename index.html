@@ -14,32 +14,78 @@
             box-sizing: border-box; 
             display: flex;
         }
-  /* General styles */
-#sidebar {
-    width: 25ch; /* Adjust the width as needed */
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #f4f4f4;
-    z-index: 1000; /* Ensure sidebar stays on top */
-    overflow-y: auto;
-    padding: 10px;
-}
-
+        #sidebar {
+            width: 90px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #f4f4f4;
+        }
+        .content {
+            flex: 1;
+            padding: 10px;
+            background-color: #fff;
+            margin-left: 190px; /* Adjust this to match the sidebar width */
+            padding: 20px;
+            min-height: 100vh; /* Ensure content area takes full height */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+        #sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #sidebar nav ul li {
+            margin: 10px 0;
+        }
+        #sidebar nav ul li a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            display: block;
+            padding: 20px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        #sidebar nav ul li a:hover {
+            color: red;
+        }
+        #wrapper { 
+            margin-left: 5px; /* Adjust this margin to match the sidebar width plus any desired spacing */
+            padding: 50px; /* Add padding to avoid text being cut off */
+        }
+        .icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .icon {
+            font-size: 2em;
+        }
+        .email-link {
+            color: red;
+        }
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
     #sidebar {
-        width: 100%; /* Sidebar takes the full width on mobile devices */
-        height: auto;
         position: fixed;
         top: 0;
         left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #f4f4f4;
         z-index: 1000; /* Ensure sidebar stays on top */
         overflow-x: auto;
         overflow-y: hidden; /* Hide vertical overflow */
     }
-    
     #sidebar nav ul {
         display: flex;
         flex-direction: row;
@@ -48,25 +94,22 @@
         padding: 0;
         white-space: nowrap; /* Prevent line breaks */
     }
-    
     #sidebar nav ul li {
         flex: 1;
         margin: 0;
     }
-    
     #sidebar nav ul li a {
-        padding: 5px;
+        padding: 10px 5px;
         text-align: center;
         border-right: 1px solid #ddd;
     }
-    
     .content {
         margin-left: 0;
-        padding: 10px;
-        padding-top: 50px; /* Adjust to avoid content being hidden behind the fixed header */
+        padding: 20px;
+        padding-top: 60px; /* Adjust to avoid content being hidden behind the fixed header */
     }
-}
- 
+        }     
+    </style>
 </head>
     
 <body class="is-preload">
@@ -76,7 +119,7 @@
         <div class="inner">
             <nav>
                 <ul>
-                    <li><a href="#intro">13:35Biography</a></li>
+                    <li><a href="#intro">4:23Biography</a></li>
                     <li><a href="#one">Skills and Experience</a></li>
                     <li><a href="#two">Resume</a></li>
                     <li><a href="#three">Projects</a></li>
