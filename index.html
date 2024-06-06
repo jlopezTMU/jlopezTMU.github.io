@@ -76,15 +76,15 @@
     }
     
     #sidebar {
-        position: fixed;
+        width: 100%; /* Sidebar takes the full width on mobile devices */
+        height: auto;
+        position: fixed; /* Ensure the sidebar is fixed */
         top: 0;
         left: 0;
-        width: 100%;
-        height: auto;
-        background-color: #f4f4f4;
         z-index: 1000; /* Ensure sidebar stays on top */
         overflow-x: auto;
         overflow-y: hidden; /* Hide vertical overflow */
+        background-color: #f4f4f4; /* Ensure background color covers full width */
     }
     #sidebar nav ul {
         display: flex;
@@ -105,7 +105,7 @@
     }
     .content {
         margin-left: 0;
-        padding: 20px;
+        padding: 5px;
         padding-top: 60px; /* Adjust to avoid content being hidden behind the fixed header */
     }
         }     
