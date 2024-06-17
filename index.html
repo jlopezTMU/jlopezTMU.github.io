@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
- <head>
+ 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
@@ -15,21 +16,18 @@
         }
         #wrapper {
             display: flex;
+            flex-direction: column;
             min-height: 100vh;
-            flex-direction: row;
         }
         #sidebar {
-            width: 200px;
+            width: 100%;
             background-color: #f4f4f4;
-            overflow-y: auto;
             padding: 10px;
             position: sticky;
             top: 0;
-            height: 100vh;
-            flex-shrink: 0;
+            z-index: 1000;
         }
         .content {
-            flex: 1;
             padding: 20px;
             background-color: #fff;
         }
@@ -37,6 +35,8 @@
             list-style: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
         }
         #sidebar nav ul li {
             margin: 10px 0;
@@ -68,16 +68,7 @@
             color: red;
         }
         @media (max-width: 768px) {
-            #wrapper {
-                flex-direction: column;
-            }
-            #sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-            }
             #sidebar nav ul {
-                display: flex;
                 flex-direction: row;
                 overflow-x: auto;
                 white-space: nowrap;
@@ -94,7 +85,173 @@
         }
     </style>
 </head>
+<body>
+    <div id="wrapper">
+        <div id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#biography">Biography</a></li>
+                    <li><a href="#skills">Skills and Experience</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#papers">Papers</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#github">GitHub</a></li>
+                    <li><a href="#linkedin">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content" id="biography">
+            <h1>George Lopez</h1>
+            <h2>PORTFOLIO</h2>
+            <p>Biography content here...</p>
+        </div>
+        <div class="content" id="skills">
+            <h2>Skills and Experience</h2>
+            <p>Skills and experience content here...</p>
+        </div>
+        <div class="content" id="resume">
+            <h2>Resume</h2>
+            <p>Resume content here...</p>
+        </div>
+        <div class="content" id="projects">
+            <h2>Projects</h2>
+            <p>Projects content here...</p>
+        </div>
+        <div class="content" id="papers">
+            <h2>Papers</h2>
+            <p>Papers content here...</p>
+        </div>
+        <div class="content" id="awards">
+            <h2>Awards</h2>
+            <p>Awards content here...</p>
+        </div>
+        <div class="content" id="github">
+            <h2>GitHub</h2>
+            <p>GitHub content here...</p>
+        </div>
+        <div class="content" id="linkedin">
+            <h2>LinkedIn</h2>
+            <p>LinkedIn content here...</p>
+        </div>
+    </div>
+</body>
+</html>
+Explanation:
+Unique IDs for Sections:
 
+Each content section has a unique id attribute (id="biography", id="skills", etc.).
+Anchor Tags in Navigation:
+
+The anchor tags (<a>) in the sidebar navigation menu have href attributes that point to the corresponding section IDs (e.g., <a href="#biography">Biography</a>).
+Click Functionality:
+
+When a user clicks on a menu item, the page will scroll to the corresponding section.
+Single Column Layout:
+
+Both the sidebar and content are displayed in a single column layout.
+Responsive Design:
+
+The media query ensures the sidebar navigation adapts to a row layout on mobile devices (max-width: 768px).
+This setup ensures that each menu option in the sidebar is clickable and navigates to the appropriate section of the page.
+
+
+
+
+
+Please understand that content needs to be displayed in ONE COLUMN!
+
+ChatGPT
+Got it. Let's ensure that the entire content, including the sidebar and the main content, is displayed in one column for both desktop and mobile views. The sidebar will remain at the top of the page.
+
+Here's the corrected HTML and CSS:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #sidebar {
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .content {
+            padding: 20px;
+            background-color: #fff;
+        }
+        #sidebar nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        #sidebar nav ul li {
+            flex: 1;
+            margin: 0;
+        }
+        #sidebar nav ul li a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            text-align: center;
+            border-right: 1px solid #ddd;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        #sidebar nav ul li a:hover {
+            color: red;
+        }
+        .icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .icon {
+            font-size: 2em;
+        }
+        .email-link {
+            color: red;
+        }
+        @media (max-width: 768px) {
+            #sidebar nav ul {
+                flex-direction: column;
+                overflow-x: hidden;
+                white-space: normal;
+            }
+            #sidebar nav ul li {
+                margin: 10px 0;
+            }
+            #sidebar nav ul li a {
+                text-align: left;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
 
     
 <body>
@@ -102,7 +259,7 @@
         <div id="sidebar">
             <nav>
                 <ul>
-                    <li><a href="#biography">1708Biography</a></li>
+                    <li><a href="#biography">1712Biography</a></li>
                     <li><a href="#skills">Skills and Experience</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#projects">Projects</a></li>
