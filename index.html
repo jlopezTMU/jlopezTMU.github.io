@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
@@ -13,20 +14,21 @@
             box-sizing: border-box; 
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
         }
         #wrapper {
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            flex: 1;
         }
         #sidebar {
-            width: 100%; /* Sidebar takes the full width */
+            width: 200px; /* Set the sidebar width */
             background-color: #f4f4f4;
             overflow-y: auto;
             padding: 10px;
             position: sticky;
             top: 0;
-            z-index: 1000; /* Ensure sidebar stays on top */
+            height: 100vh;
+            flex-shrink: 0; /* Prevent sidebar from shrinking */
         }
         .content {
             flex: 1;
@@ -68,8 +70,14 @@
             color: red;
         }
         @media (max-width: 768px) {
+            #wrapper {
+                flex-direction: column;
+            }
             #sidebar {
                 width: 100%;
+                height: auto;
+                position: relative;
+                top: 0;
             }
             #sidebar nav ul {
                 display: flex;
@@ -89,13 +97,14 @@
         }
     </style>
 </head>
+
     
 <body>
     <div id="wrapper">
         <div id="sidebar">
             <nav>
                 <ul>
-                    <li><a href="#biography">1341Biography</a></li>
+                    <li><a href="#biography">1347Biography</a></li>
                     <li><a href="#skills">Skills and Experience</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#projects">Projects</a></li>
