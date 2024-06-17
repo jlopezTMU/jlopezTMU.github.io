@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 10;
+            padding: 0;
             box-sizing: border-box; 
             display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         #wrapper { 
             display: flex;
-            flex-direction: column;
-            
+            flex: 1;
+            flex-direction: row;
         }        
         #sidebar {
             width: 20%; /* Set the sidebar width to 20% */
@@ -33,18 +34,17 @@
         }
         .content {
             flex: 1;
-            padding: 10px;
+            padding: 20px;
+            margin-left: 220px; /* Ensure content margin matches sidebar width */
             background-color: #fff;
-            margin-left: 0px; /* Adjust this to match the sidebar width */
-            
             min-height: 100vh; /* Ensure content area takes full height */
             box-sizing: border-box; /* Include padding in the element's total width and height */
         }
 
         #sidebar nav ul {
             list-style: none;
-            
             margin: 0;
+            padding: 0;
         }
         #sidebar nav ul li {
             margin: 10px 0;
@@ -76,48 +76,46 @@
         .email-link {
             color: red;
         }
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
 
-    #wrapper { 
-            display: flex;
-            flex-direction: column;
-        }        
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
 
-    #sidebar {
-        width: 100%; /* Sidebar takes the full width on mobile devices */
-        height: auto;
-        position: fixed; /* Ensure the sidebar is fixed */
-        top: 0;
-        left: 0;
-        z-index: 1000; /* Ensure sidebar stays on top */
-        overflow-x: auto;
-        overflow-y: hidden; /* Hide vertical overflow */
-        background-color: #f4f4f4; /* Ensure background color covers full width */
-    }
-    #sidebar nav ul {
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto; /* Horizontal scrolling if needed */
-        margin: 0;
-        padding: 10;
-        white-space: nowrap; /* Prevent line breaks */
-    }
-    #sidebar nav ul li {
-        flex: 1;
-        margin: 0;
-    }
-    #sidebar nav ul li a {
-        padding: 10px;
-        text-align: center;
-        border-right: 1px solid #ddd;
-    }
-    .content {
-        margin-left: 0;
-        padding: 10px;
-        padding-top: 60px; /* Adjust to avoid content being hidden behind the fixed header */
-    }
-        }     
+            #wrapper { 
+                flex-direction: column;
+            }
+
+            #sidebar {
+                width: 100%; /* Sidebar takes the full width on mobile devices */
+                height: auto;
+                position: static; /* Ensure the sidebar scrolls with the content */
+                overflow: hidden; /* Hide overflow */
+            }
+            #sidebar nav ul {
+                display: flex;
+                flex-direction: row;
+                overflow-x: auto; /* Horizontal scrolling if needed */
+                margin: 0;
+                padding: 0;
+                white-space: nowrap; /* Prevent line breaks */
+            }
+            #sidebar nav ul li {
+                flex: 1;
+                margin: 0;
+            }
+            #sidebar nav ul li a {
+                padding: 10px;
+                text-align: center;
+                border-right: 1px solid #ddd;
+            }
+            .content {
+                margin-left: 0;
+                padding: 10px;
+                padding-top: 60px; /* Adjust to avoid content being hidden behind the fixed header */
+            }
+        }
     </style>
 </head>
     
@@ -128,7 +126,7 @@
         <div class="inner">
             <nav>
                 <ul>
-                    <li><a href="#intro">JUN05Biography</a></li>
+                    <li><a href="#intro">1312Biography</a></li>
                     <li><a href="#one">Skills and Experience</a></li>
                     <li><a href="#two">Resume</a></li>
                     <li><a href="#three">Projects</a></li>
