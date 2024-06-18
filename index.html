@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+        #sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            flex: 1;
+            background-color: #fff;
+        }
+        #sidebar nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #sidebar nav ul li {
+            margin: 10px 0;
+        }
+        #sidebar nav ul li a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        #sidebar nav ul li a:hover {
+            color: red;
+        }
+        .icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .icon {
+            font-size: 2em;
+        }
+        .email-link {
+            color: red;
+        }
+        @media (max-width: 768px) {
+            #sidebar {
+                width: 100%;
+                height: auto;
+                position: fixed;
+                top: 0;
+                left: 0;
+                overflow-x: auto;
+                overflow-y: hidden;
+                display: flex;
+                flex-direction: row;
+                white-space: nowrap;
+            }
+            #sidebar nav ul {
+                display: flex;
+                flex-direction: row;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+            #sidebar nav ul li {
+                flex: 1;
+                margin: 0;
+            }
+            #sidebar nav ul li a {
+                padding: 10px;
+                text-align: center;
+                border-right: 1px solid #ddd;
+            }
+            .content {
+                margin-left: 0;
+                padding-top: 60px; /* Adjust this value to match the height of the fixed header */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#biography">1227Biography</a></li>
+                <li><a href="#skills">Skills and Experience</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#papers">Papers</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#linkedin">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </div>
+
+ <div class="content" id="biography">
+        <h1>George Lopez</h1>
+        <h2>PORTFOLIO</h2>
+        <h3>BIOGRAPHY</h3>
+        <p>As a Computer Science practitioner with a focus on data science (including machine learning and deep learning)...</p>
+        <!-- The rest of your biography content -->
+    </div>
+    <div class="content" id="skills">
+        <h1 align="center">George Lopez</h1>
+        <h2 align="center">PORTFOLIO</h2>
+        <h3>SKILLS AND EXPERIENCE</h3>
+        <h3>Technical Skills</h3>
+        <ul>
+            <li><strong>Programming Languages:</strong> Proficiency in Python, R, Java and SQL...</li>
+            <!-- Other technical skills -->
+        </ul>
+        <h3>Soft Skills</h3>
+        <ul>
+            <li><strong>Data Storytelling:</strong> Ability to translate complex data findings into actionable insights...</li>
+            <!-- Other soft skills -->
+        </ul>
+    </div>
+    <div class="content" id="resume">
+        <h1 align="center">George Lopez</h1>
+        <h2 align="center">PORTFOLIO</h2>
+        <h3>RESUME</h3>
+        <p style="color: red;"><u><strong>PLEASE CONTACT ME FOR A PRINTED VERSION OF MY RESUME WHICH ALSO INCLUDES PERSONAL INFORMATION</strong></u></p>
+        <p>SUMMARY OF QUALIFICATIONS</p>
+        <h1>DATA SCIENTIST</h1>
+        <ul>
+            <li>Computer Science Professional with over fifteen years of Canadian experience...</li>
+            <!-- Other resume content -->
+        </ul>
+    </div>
+    <div class="content" id="projects">
+        <h1 align="center">George Lopez</h1>
+        <h2 align="center">PORTFOLIO</h2>
+        <h2>Projects</h2>
+        <p><strong>Prompta Alpha-1 Project.</strong></p>
+        <p><strong>Abstract:</strong></p>
+        <p>A NLP and Sentiment Analysis application that analyses large text corpuses...</p>
+        <!-- Other project content -->
+    </div>
+    <div class="content" id="papers">
+        <h1 align="center">George Lopez</h1>
+        <h2 align="center">PORTFOLIO</h2>
+        <h2>PAPERS AND PUBLICATIONS</h2>
+        <p>PAPER 1 NAME</p>
+        <p>PAPER 2 NAME</p>
+        <p>PAPER 3 NAME</p>
+    </div>
+    <div class="content" id="awards">
+        <h1 align="center">George Lopez</h1>
+        <h2 align="center">PORTFOLIO</h2>
+        <h2>AWARDS</h2>
+        <p>AWARD 1 NAME</p>
+        <p>AWARD 2 NAME</p>
+    </div>
+    <div class="content" id="github">
+        <h2>GITHUB</h2>
+        <ul class="icons">
+            <li><a href="https://github.com/jlopeztmu" class="icon fa-brands fa-github fa-2x" target="_blank"></a></li>
+        </ul>
+    </div>
+    <div class="content" id="linkedin">
+        <h2>LINKEDIN</h2>
+        <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/cytlalli" class="icon fa-brands fa-linkedin-in fa-2x" target="_blank"></a></li>
+        </ul>
+    </div>
+   <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
